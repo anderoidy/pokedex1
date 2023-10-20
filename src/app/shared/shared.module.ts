@@ -2,17 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 //Components
-import { PokeReaderComponent } from './poke-reader/poke-reader.component';
+import { PokeHeaderComponent } from './poke-header/poke-header.component';
+import { PokeSearchComponent } from './poke-search/poke-search.component';
+import { PokeListComponent } from './poke-list/poke-list.component';
 
 @NgModule({
   declarations: [
-    PokeReaderComponent
+    PokeHeaderComponent,
+    PokeSearchComponent,
+    PokeListComponent
   ],
-
   exports: [
-    PokeReaderComponent
+    PokeHeaderComponent,
+    PokeSearchComponent,
+    PokeListComponent
   ],
-
   imports: [
     CommonModule
   ]
