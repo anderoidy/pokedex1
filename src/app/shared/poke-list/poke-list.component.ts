@@ -8,20 +8,29 @@ import { PokeApiService } from 'src/app/service/poke-api.service';
 })
 export class PokeListComponent {
 
-
+  private setAllPokemons: any
   public getAllPokemons: any
-  //reparei que no meu nao tinha nem o contrutor nem ongOnInit
-  //quero que vc chame a PokeApiService no parametro do construtor
+
+  public apiError: boolean = false
+
   constructor( private pokeApiService: PokeApiService) {
   }
-  //agente precisa chamar a funcao que foi instanciada no construtor, aqui no ngOnInit
+
   ngOnInit(): void {
     this.pokeApiService.apiListAllPokemons.subscribe(
       res=> {
-        this.getAllPokemons = res.results
-       // console.log(this.getAllPokemons)
+        this.setAllPokemons = res.results
+        this.getAllPokemons = this.setAllPokemons
+      },
+      error => {
+        this.apiError = true
       }
     );
   }
-//como agente ta usando o get nao precisamos chamar nada por paramentro na funcao apiListAllPokemons
+  public getSearch(value: string) {
+      const filter = this.setAllPokemons.filter( (res: any) => {
+        return!res.name.indexOf(value.toLowerCase());
+      })
+      this.getAllPokemons = filter
+  }
 }

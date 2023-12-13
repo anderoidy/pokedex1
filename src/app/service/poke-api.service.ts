@@ -19,7 +19,7 @@ private url:string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100'
         tap( res => {
           res.results.map( (resPokemons: any) => {
 
-            this.apiGetPokemons(resPokemons.url).subscribe(
+            this.apiGetPokemon(resPokemons.url).subscribe(
               res => resPokemons.status = res
             )
 
@@ -27,7 +27,7 @@ private url:string = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=100'
         })
       )
    }
-   public apiGetPokemons( url: string ):Observable<any> {
+   public apiGetPokemon( url: string ):Observable<any> {
     return this.http.get<any>(url).pipe(
       map(
         res => res
