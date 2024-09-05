@@ -1,27 +1,83 @@
-# Pokedexr
+# Pokédex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+![Pokédex](./imagens/captura1.png)
 
-## Development server
+## Sobre o Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este é um projeto de uma **Pokédex** simples que permite a busca e exibição de informações detalhadas sobre diferentes Pokémon. O projeto foi desenvolvido utilizando **Angular** no front-end e integra-se com uma API para buscar as informações dos Pokémon.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Busca de Pokémon pelo nome ou ID
+- Exibição de detalhes como: nome, tipo, habilidades e imagem do Pokémon
+- Interface responsiva e intuitiva
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Framework utilizado para o desenvolvimento do front-end.
+- **TypeScript**: Linguagem de programação usada no projeto.
+- **PokéAPI**: API pública utilizada para obter informações dos Pokémon.
+- **Bootstrap**: Biblioteca utilizada para estilização e responsividade.
 
-## Running unit tests
+## Capturas de Tela
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Página Inicial](./imagens/pokedextela1.png)
+*Página Inicial da Pokédex*
 
-## Running end-to-end tests
+![Detalhes do Pokémon](./imagens/pokedextela2.png)
+*Exibição dos detalhes de um Pokémon*
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Buscando um Pokémon na barra de pesquisa](./imagens/pokedextela3.png)
+*Exibição dos detalhes de um Pokémon*
 
-## Further help
+## Como Executar o Projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Pré-requisitos
+
+Certifique-se de ter o **Node.js** e o **Angular CLI** instalados em sua máquina. Você pode verificar a instalação com os seguintes comandos:
+
+```bash
+node -v
+npm -v
+```
+
+### Instalação
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/anderoidy/pokedex1.git
+   cd pokedex1
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   ng serve
+   ```
+
+4. Acesse a aplicação no navegador:
+
+   ```
+   http://localhost:4200
+   ```
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+1. Fork este repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/sua-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona uma nova feature'`)
+4. Push para a branch (`git push origin feature/sua-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
