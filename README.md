@@ -1,6 +1,6 @@
 # Pokédex
 
-![Pokédex](./imagens/captura1.png)
+![Pokédex](./images/pokedextela1.png)
 
 ## Sobre o Projeto
 
@@ -21,13 +21,13 @@ Este é um projeto de uma **Pokédex** simples que permite a busca e exibição 
 
 ## Capturas de Tela
 
-![Página Inicial](./imagens/pokedextela1.png)
+![Página Inicial](./images/pokedextela1.png)
 *Página Inicial da Pokédex*
 
-![Detalhes do Pokémon](./imagens/pokedextela2.png)
+![Detalhes do Pokémon](./images/pokedextela2.png)
 *Exibição dos detalhes de um Pokémon*
 
-![Buscando um Pokémon na barra de pesquisa](./imagens/pokedextela3.png)
+![Buscando um Pokémon na barra de pesquisa](./images/pokedextela3.png)
 *Exibição dos detalhes de um Pokémon*
 
 ## Como Executar o Projeto
